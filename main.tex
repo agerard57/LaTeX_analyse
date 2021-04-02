@@ -27,7 +27,7 @@ headsepline,
 
 \usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex}
 
-\addbibresource{bibliographie.bib}
+\addbibresource{bibliographie}
 
 \usepackage[autostyle=true]{csquotes}
 
@@ -69,7 +69,7 @@ headsepline,
 \pagestyle{plain}
 
 %----------------------------------------------------------------------------------------
-%	TITLE PAGE
+%	TITRE
 %----------------------------------------------------------------------------------------
 
 \begin{titlepage}
@@ -94,11 +94,10 @@ headsepline,
  
 \vfill
 
-\large \textit{Analyse poussée d'une publicité de sensibilisation étant\\ extraite d'une campagne }\\[0.3cm]
+\large \textit{Analyse poussée d'une publicité extraite d'une campagne \\ venant d'une marque à notoriété mondiale }\\[0.3cm]
 \vspace*{15mm}
 \groupname\\\deptname\\[2cm]
 \includegraphics[width=20mm]{medias/ul.png}
-\includegraphics[width=20mm]{medias/WCCB.png}
 
 \vfill
 
@@ -119,20 +118,12 @@ headsepline,
 %	CONTENU
 %----------------------------------------------------------------------------------------
 
-\mainmatter % Begin numeric (1,2,3...) page numbering
+\mainmatter
+\pagestyle{analyse}
 
-\pagestyle{thesis} % Return the page headers back to the "thesis" style
-
-\include{Contenu/Chapter1}
-
-%----------------------------------------------------------------------------------------
-%	ANNEXE
-%----------------------------------------------------------------------------------------
-
-\appendix
-
-\include{Annexe/AnnexeA}
-
+\include{Contenu/Introduction}
+\include{Contenu/Contenu}
+\include{Contenu/Conclusion}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHIE
