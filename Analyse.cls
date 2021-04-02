@@ -168,11 +168,19 @@
 \RequirePackage{caption}
 \captionsetup{justification=centerlast,font=small,labelfont=sc,margin=50pt}
 \usepackage{hyperref}
+\usepackage{xcolor}
 
 
 %----------------------------------------------------------------------------------------
 %	COMMANDES CUSTOMS
 %----------------------------------------------------------------------------------------
+
+\definecolor{palette1}{RGB}{24,24,24}
+\definecolor{palette2}{RGB}{244,26,27}
+\definecolor{palette3}{RGB}{227,215,202}
+\definecolor{palette4}{RGB}{21,74,64}
+\definecolor{palette5}{RGB}{147,25,29}
+
 
 \NewDocumentCommand{\thesistitle} { o m }{
  \IfValueTF{#1}{\def\shorttitle{#1}}{\def\shorttitle{#2}}
@@ -198,7 +206,6 @@
 
 \NewDocumentCommand{\bhrule}{}{\typeout{--------------------}}
 \NewDocumentCommand{\tttypeout}{m}{\bhrule\typeout{\space #1}\bhrule}
-
 \newcommand{\HRule}{\rule{.9\linewidth}{.6pt}}
 \newcommand{\decoRule}{\rule{.8\textwidth}{.4pt}}
 
